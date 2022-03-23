@@ -3,9 +3,8 @@
   connection: local
   become: true
   tasks:
-      - name: Run update
+      - name: use cache
         apt:
-            upgrade: yes
             update_cache: true
       - name: Install 
         apt:
