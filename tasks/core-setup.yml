@@ -1,0 +1,14 @@
+- name: Install system packages
+  become: true
+  package:
+    name: 
+      - curl
+      - htop
+      - lsof
+      - i3
+      - python3-pip
+      - nvidia-settings
+      - pavucontrol
+      - docker
+  tags:
+    - install
